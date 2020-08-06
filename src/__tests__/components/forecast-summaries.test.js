@@ -7,7 +7,7 @@ describe('ForecastSummaries', () =>{
             {
                 date: 123,
                 description: 'date1',
-                icon: 'icon0',
+                icon: '200',
                 temperature: {
                     max: 1234
                 }
@@ -15,7 +15,7 @@ describe('ForecastSummaries', () =>{
             {
                 date: 321,
                 description: 'date2',
-                icon: 'icon1',
+                icon: '900',
                 temperature: {
                     max: 4321
                 }
@@ -23,16 +23,16 @@ describe('ForecastSummaries', () =>{
             {
                 date: 555,
                 description: 'date3',
-                icon: 'icon3',
+                icon: '800',
                 temperature: {
                     max: 909
                 }
             }
         ]
-    it('renders the correct amount of props for ForecastSummaries', () =>{
+    it('it matches the snapshot', () =>{
         const {asFragment} = render(<ForecastSummaries forecasts={forecasts}/>)
         
-        expect(asFragment()).toMatchSnapshot()
+        expect(asFragment).toMatchSnapshot()
     })
     it('renders the correct amount of props for ForecastSummaries', () => {
         const { getAllByTestId } = render ( <ForecastSummaries forecasts={forecasts}/> )
