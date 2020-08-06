@@ -19,11 +19,12 @@ const ForecastSummary = (props)=> {
 
 ForecastSummary.propTypes = {
     forecast: PropTypes.shape({
-    date: PropTypes.string.isRequired,
-    temperature: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    icon: PropTypes.object.isRequired,
-    onSelect: PropTypes.func})
+            date: PropTypes.string.isRequired,
+            temperature: PropTypes.number.isRequired,
+            description: PropTypes.string.isRequired,
+            icon: PropTypes.object.isRequired,
+            onSelect: PropTypes.func
+        })
 }
 
 export default ForecastSummary;

@@ -1,8 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import ForecastSummary from '../../components/forecast-summary'
-import WeatherIcon from '../../components/forecast-summary'
-import moment from 'moment'
+
 
 describe('ForecastSummary', () => {
     it('renders correctly', () =>{
