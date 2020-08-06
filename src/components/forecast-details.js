@@ -6,16 +6,16 @@ import '../styles/forecast-details.css'
 const ForecastDetails = (props) => {
   return (
   <div className='forecastdetails'>
-    <div>{moment(props.forecasts.date).format('ddd do MMM')}</div>  
+    <div>{moment(props.forecast.date).format('dddd Do MMM')}</div>  
     <div>Temperature:
-        <p>Max: {props.forecasts.temperature.max}</p>
-        <p>Min: {props.forecasts.temperature.min}</p>
+        <p>Max: {props.forecast.temperature.max}</p>
+        <p>Min: {props.forecast.temperature.min}</p>
     </div>
     <div>Wind 
-        <p>speed: {props.forecasts.wind.speed}</p>
-        <p>direction: {props.forecasts.wind.direction}</p>
+        <p>speed: {props.forecast.wind.speed}</p>
+        <p>direction: {props.forecast.wind.direction}</p>
     </div>
-    <div>Humidity: {props.forecasts.humidity}</div>
+    <div>Humidity: {props.forecast.humidity}</div>
 </div>)
 }
 

@@ -22,7 +22,7 @@ const ForecastSummaries = props => (
 
 ForecastSummaries.propTypes = {
     forecasts: PropTypes.array.isRequired,
-    onForecastSelect: PropTypes.func.isRequired
+    onSelect: PropTypes.func
 }
 
 export default ForecastSummaries

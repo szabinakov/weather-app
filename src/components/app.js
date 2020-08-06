@@ -4,14 +4,15 @@ import axios from 'axios'
 import '../styles/app.css'
 import LocationDetails from './location-details.js'
 import ForecastSummaries from'./forecast-summaries.js'
-
+import SearchForm from './search-form.js'
 import ForecastDetails from './forecast-details.js'
 
 const App = props => {
     const [selectedDate, setSelectedDate] = useState('');
     const [forecasts, setForecast] = useState([])
     const [location, setLocation] = useState({ city:'', country:''})
-
+    const [searchText, setSearchText] = useState('')
+    
     useEffect(() => {
         axios.get('https://mcr-codes-weather.herokuapp.com/forecast?city=Manchester')
         .then(res => {
@@ -23,6 +24,17 @@ const App = props => {
         })
     },
     [])
+
+    const citySearch = () => {
+        axios.get(`https://mcr-codes-weather.herokuapp.com/forecast?city=${searchText}`)
+        .then(res => {
+            setLocation(res.data.location)
+            setForecast(res.data.forecasts)
+        })
+        .catch(err => {
+            alert(err)
+        })
+    }
     
     const selectedForecast = forecasts.find((forecast) => forecast.date === selectedDate);
     
@@ -36,6 +48,7 @@ const App = props => {
           city={location.city}
           country={location.country}
         />
+        <SearchForm onSearch={citySearch} searchText={searchText} setSearchText={setSearchText}/>
         <ForecastSummaries onForecastSelect={handleForecastSelect} forecasts={forecasts} />
     {        
         selectedForecast && (<ForecastDetails forecast={selectedForecast} />)
