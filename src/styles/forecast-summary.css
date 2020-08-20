@@ -5,5 +5,26 @@
     justify-content: space-around;
     height: 150px;
     width: 150px;
-    border: solid
+    border: 1px groove rgb(254, 255, 172);
+}
+.date, .temperature, .description, .icon {
+    color: white;
+}
+
+button {
+    background-color: thistle;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(254, 255, 172);
+    border-radius: 8%;
+}
+
+
+@media screen and (max-width: 1070px) {
+    button {
+        background-color: rgba(14, 85, 55, 0.623);
+        border: 1px solid rgb(8, 88, 39);
+    }
+    .container {
+        background-color: rgba(5, 39, 5, 0.719);
+    }
 }

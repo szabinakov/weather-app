@@ -2,3 +2,12 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 1070px) {
+    .forecast-summaries {
+        border: solid wheat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+}

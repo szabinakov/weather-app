@@ -1,3 +1,7 @@
 .forecastdetails {
-    display: grid;
+    text-align: center;
+    margin-top: 60px ;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
 }
+
