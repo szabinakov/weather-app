@@ -16,10 +16,14 @@ Part of my studies at Manchester Codes, I have been asked to build a weather app
 
 ### Design 
 
-On Compoter
+On Computer and Mobile
+
 ![Computer Screenshot](./Complook.png)
 
-On Mobile
 ![Mobile Screenshot](./moblook.png)
 
+## Author
+Szabina Kovacs
 
+### Deployed
+[Weather App](https://weather-app-ochre-two.vercel.app/)
