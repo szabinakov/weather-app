@@ -28,3 +28,8 @@ button {
         background-color: rgba(5, 39, 5, 0.719);
     }
 }
+@media screen and (max-width: 750px){
+    .container {
+        margin: 15px;
+    }
+}
