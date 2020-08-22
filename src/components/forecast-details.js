@@ -4,6 +4,7 @@ import moment from 'moment'
 import '../styles/forecast-details.css'
 
 const ForecastDetails = (props) => {
+
   return (
         <div className='forecastdetails'>
               <div data-testid='dateId' className='dateClass'>

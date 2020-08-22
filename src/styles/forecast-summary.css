@@ -30,6 +30,7 @@ button {
 }
 @media screen and (max-width: 750px){
     .container {
-        margin: 15px;
+        margin: 10px;
+        height: 110px;
     }
 }

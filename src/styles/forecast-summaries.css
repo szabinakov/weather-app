@@ -1,7 +1,6 @@
 .forecast-summaries {
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-around;}
 
 @media screen and (max-width: 1070px) {
     .forecast-summaries {
@@ -9,4 +8,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         }
+}
+
+@media screen and (max-width: 750px){
+    .forecast-summaries {
+        margin-top: -75px;
+    }
 }

@@ -6,6 +6,8 @@ body{
     height: 100vh;
     font-family: 'Crimson Text', serif;
     color: rgba(255, 255, 255, 0.911);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1070px){

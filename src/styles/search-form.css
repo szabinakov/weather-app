@@ -10,6 +10,9 @@
     border-radius: 8%;
 }
 
+.inputClass {
+    opacity: 80%;
+}
 @media screen and (max-width: 1070px) {
     .searchform {
         margin-left: 180px;
@@ -18,10 +21,14 @@
         background-color: rgba(14, 85, 55, 0.623);
         border: 1px solid rgb(8, 88, 39);
     }
+   
 }
 @media screen and (max-width: 750px){
     .searchform {
         margin: 0;
-        margin-top: 40px;
+        margin-top: 20px;
+    }
+    .inputClass {
+        opacity: 60%;
     }
 }

@@ -14,7 +14,7 @@ const App = props => {
     const [location, setLocation] = useState({ city:'', country:''})
     const [searchText, setSearchText] = useState('')
     const [errorMessage, setErrorMessage] = useState(false)
-
+    
     useEffect(() => {
         axios.get('https://mcr-codes-weather.herokuapp.com/forecast?city=Manchester')
         .then(res => {
