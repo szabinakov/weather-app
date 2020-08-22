@@ -10,9 +10,6 @@
     border-radius: 8%;
 }
 
-.inputClass {
-    opacity: 80%;
-}
 @media screen and (max-width: 1070px) {
     .searchform {
         margin-left: 180px;
@@ -28,7 +25,5 @@
         margin: 0;
         margin-top: 20px;
     }
-    .inputClass {
-        opacity: 60%;
-    }
+
 }
